@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
 import Image from 'next/image';
+import { inter } from '@/app/fonts';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -36,7 +37,7 @@ export default function Header() {
             <Image className={styles.logoImg} src='/logo.svg' alt='Logo' width={20} height={20} />
           </section>
 
-          <div className={styles.logo}>
+          <div className={styles.logo + ' ' + inter.className}>
             <Link href='/'>LOGO</Link>
           </div>
 

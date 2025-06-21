@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Header from '@/app/components/header/Header';
+import Footer from '@/app/components/footer/Footer';
 import './globals.css'; // Importing the global styles
+import { simplonNorm } from './fonts';
 
 export const metadata: Metadata = {
   title: 'E-commerce Store - Discover Our Products',
@@ -11,9 +13,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body>
+      <body className={simplonNorm.className}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

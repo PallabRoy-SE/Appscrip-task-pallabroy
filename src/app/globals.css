@@ -5,7 +5,6 @@
   --border-color: #e5e5e5;
   --footer-bg: #000;
   --footer-text: #fff;
-  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --container-width: 1340px;
   --container-padding: 90%;
 }
@@ -13,7 +12,6 @@
 /* Basic Reset & Body styles */
 body {
   margin: 0;
-  font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--primary-color);
   line-height: 1.6;
