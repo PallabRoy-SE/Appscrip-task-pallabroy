@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Header from '@/app/components/header/Header';
 import './globals.css'; // Importing the global styles
 
 export const metadata: Metadata = {
