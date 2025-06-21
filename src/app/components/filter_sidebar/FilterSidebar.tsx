@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import styles from './FilterSidebar.module.css';
 
 const filterSectionsData = [
@@ -37,7 +37,7 @@ const FilterGroup = ({
   id: string;
   options: string[];
   openSection: string | null;
-  setOpenSection: Function;
+  setOpenSection: Dispatch<SetStateAction<string | null>>;
 }) => {
   const isOpen = openSection === id;
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
