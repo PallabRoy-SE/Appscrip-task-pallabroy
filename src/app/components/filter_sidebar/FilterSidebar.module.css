@@ -1,0 +1,116 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.customizableFilter {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.customizableFilter label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.customizableFilter input[type='checkbox'],
+.optionLabel input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  border: 1px solid #ccc;
+  accent-color: var(--primary-color);
+}
+
+.filterSection {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+.filterSection:last-child {
+  border-bottom: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border: solid var(--primary-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow.open {
+  transform: rotate(-135deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+}
+
+.content.open {
+  max-height: 500px;
+  padding-top: 1rem;
+}
+
+.unselectButton {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+}
+.unselectButton:hover {
+  color: var(--primary-color);
+}
+
+.optionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionsList li {
+  margin-bottom: 0.75rem;
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.optionLabel input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  border: 1px solid #ccc;
+}

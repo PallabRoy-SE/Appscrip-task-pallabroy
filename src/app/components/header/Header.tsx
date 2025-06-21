@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.container + ' container'}>
+      <div className='container'>
         <div className={styles.headerMain}>
           <section className={styles.leftSection}>
             <button

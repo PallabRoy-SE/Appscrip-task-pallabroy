@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={`container ${styles.container}`}>
+      <div className={`container`}>
         {/* Top Section */}
         <div className={styles.topSection}>
           <div className={styles.newsletter}>
@@ -143,7 +143,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className={styles.copyright}>Copyright © {new Date().getFullYear()} mettāmuse. All rights reserved.</div>
+      <div className={styles.copyright}>Copyright © {new Date().getFullYear()} mettāmuse, Pallab Roy.</div>
     </footer>
   );
 }

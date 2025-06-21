@@ -10,6 +10,7 @@ A modern, responsive e-commerce storefront built with **Next.js 15**, **TypeScri
 - **Server-Side Rendering (SSR)** – Utilizes Next.js App Router for improved SEO and faster initial load.
 - **TypeScript** – Strong typing for better scalability and developer experience.
 - **CSS Modules** – Scoped, modular styling to avoid class name conflicts.
+- **Component-Based Architecture** – Clean and reusable UI components located in `src/components`.
 - **SEO Optimization** – Dynamic metadata with Next.js metadata API.
 
 ## 🛠️ Tech Stack
@@ -74,10 +75,14 @@ You should now see the homepage of the e-commerce store. Any code changes will a
 ```
 Appscrip-task-pallabroy/
 ├── src/
-│   └── app/
-│       ├── globals.css      # Global styles and CSS variables
-│       ├── layout.tsx       # Root layout component
-│       └── page.tsx         # Homepage component
+│   ├── app/
+│   │   ├── components/      # Reusable UI components (Header, Footer, ProductCard, etc.)
+│   │   ├── globals.css      # Global styles and CSS variables
+│   │   ├── layout.tsx       # Root layout component
+│   │   └── page.tsx         # Homepage component
+│   └── lib/
+│       └── types.ts         # TypeScript type definitions
+├── public/                  # Static assets (images, fonts, etc.)
 ├── eslint.config.mjs        # ESLint config
 ├── next.config.ts           # Next.js config
 ├── package.json             # Project metadata and dependencies

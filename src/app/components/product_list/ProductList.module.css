@@ -1,0 +1,37 @@
+.mainContent {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.filters {
+  transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.4s ease-in-out, transform 0.4s ease-in-out;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.filters.visible {
+  width: 250px;
+  opacity: 1;
+  transform: translateX(0);
+  padding-right: 16px;
+}
+
+.filters.hidden {
+  width: 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  padding-right: 0;
+}
+
+.products {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+@media (max-width: 992px) {
+  .filters.visible,
+  .filters.hidden {
+    display: none;
+  }
+}
