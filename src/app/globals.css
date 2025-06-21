@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666;
+  --background-color: #ffffff;
+  --border-color: #e5e5e5;
+  --footer-bg: #000;
+  --footer-text: #fff;
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --container-width: 1340px;
+  --container-padding: 90%;
+}
+
+/* Basic Reset & Body styles */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* A global container class can still be useful */
+.container {
+  width: var(--container-padding);
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
