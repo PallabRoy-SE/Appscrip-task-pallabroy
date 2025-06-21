@@ -26,7 +26,19 @@ const filterSectionsData = [
   },
 ];
 
-const FilterGroup = ({ title, id, options, openSection, setOpenSection }: any) => {
+const FilterGroup = ({
+  title,
+  id,
+  options,
+  openSection,
+  setOpenSection,
+}: {
+  title: string;
+  id: string;
+  options: string[];
+  openSection: string | null;
+  setOpenSection: Function;
+}) => {
   const isOpen = openSection === id;
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
 

@@ -28,7 +28,7 @@ export default function ProductList({ initialProducts }: ProductListProps) {
 
   const productsWithStates = useMemo(() => addProductStates(initialProducts), [initialProducts]);
 
-  const [filteredProducts, setFilteredProducts] = useState(productsWithStates);
+  const [filteredProducts] = useState(productsWithStates);
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,7 +41,7 @@ export default function ProductList({ initialProducts }: ProductListProps) {
   }, []);
 
   const sortedProducts = useMemo(() => {
-    let sorted = [...filteredProducts];
+    const sorted = [...filteredProducts];
     switch (sortOption) {
       case 'PRICE : HIGH TO LOW':
         sorted.sort((a, b) => b.price - a.price);
